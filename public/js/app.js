@@ -154,6 +154,12 @@ if (e.target.nodeName === "BUTTON") {
     } else if (e.target.classList.contains("bouton-carousel-quatre")) {
       affichageCarousel.style.transform = "translateX(-50.1%)"
       e.target.classList.add("active")
-    }
+    } else if (e.target.classList.contains("bouton-carousel-cinq")) {
+        affichageCarousel.style.transform = "translateX(-66.8%)"
+        e.target.classList.add("active")
+    } else if (e.target.classList.contains("bouton-carousel-six")) {
+        affichageCarousel.style.transform = "translateX(-83.5%)"
+        e.target.classList.add("active")
+      }
   }
 })
