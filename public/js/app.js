@@ -22,7 +22,6 @@ let couleurImageNavbar = document.querySelector(`.image-navbar`)
 
 // +++ NAVBAR SCROLL +++ //
 window.addEventListener(`scroll` , () => {
-    header.style = "height:50px";
     maNavbar.classList.add(`d-flex`,`justify-content-center`,`align-items-center`)
 
     if (window.scrollY == 0) {
@@ -37,6 +36,7 @@ window.addEventListener(`scroll` , () => {
 let changementCouleurBlanc = () => {
     monBody.classList.remove(`bg-dark`)
     maNavbar.classList.remove(`bg-dark`)
+    maNavbar.classList.add(`bg-white`)
     couleurTextNavbar.forEach(element => {
         element.classList.remove(`text-white`)
     })
